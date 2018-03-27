@@ -1,0 +1,28 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>跳转中</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="./min.css">
+
+</head>
+<body>
+<div class="page__hd" align="center">
+        <h3 align="center" style="padding:30px;">正在打开微信请稍等...</h3>
+        <a href="javascript:;" class="weui-btn weui-btn_primary weui-btn_loading" onClick="toweixin();" style="width: 60%">重新打开微信</a>
+        <img src="./WechatIMG32.jpg" />
+    </div>
+
+<script>
+setTimeout(toweixin(),300)
+	function toweixin(){
+		window.open("weixin://dl/business/?ticket=t40fdb874edfe5d06d79aa21bc3462fe7", "_self");
+	}
+</script>
+
+<script type="text/javascript" src="//js.users.51.la/19415071.js"></script>
+</body>
+</html>
